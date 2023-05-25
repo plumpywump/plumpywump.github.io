@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"  href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +22,9 @@
             <img src="svg/shwetha-logo2.svg" width="250" alt="Shwetha Elisha Logo">
             <nav>
                 <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <a href="index.html" class="primary-button-fixed">Work</a>
+                    <a href="about.html" class="inactive-button-fixed">About</a>
+                    <a href="#contact" class="inactive-button-fixed">Contact</a>
                 </ul>
             </nav>
         </div>
@@ -27,7 +33,7 @@
     <main>
         <!-- Title & Image -->
         <div>
-            <h1>Recipe App UI/UX Case Study</h1>
+            <h1 class="bar">Recipe App UI/UX Case Study</h1>
         </div>
         <div>
             <picture>
@@ -38,7 +44,7 @@
 
         <!-- Intro -->
         <div>
-            <h2>Inroducing Healthy Indian Cooking</h2>
+            <h2 class="bar">Inroducing Healthy Indian Cooking</h2>
         </div>
         <div>
             <picture>
@@ -66,10 +72,13 @@
         <div>
             <p>Customize Ingredients in Every Recipe and Set a Timer When You Cook</p>
         </div>
-
+    
+        <!-- Video 1 -->
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/823095945?h=0716d71462&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+       
         <!-- Overview -->
         <div>
-            <h2>Overview</h2>
+            <h2 class="bar">Overview</h2>
         </div>
         <div>
             <p>Healthy Indian Cooking is a Recipe app that specifically
@@ -82,7 +91,7 @@
 
         <!-- The Problem -->
         <div>
-             <h2>The Problem</h2>
+             <h2 class="bar">The Problem</h2>
          </div>
          <div>
             <ul>
@@ -95,7 +104,7 @@
 
         <!-- The Solution -->
         <div>
-            <h2>The Solution</h2>
+            <h2 class="bar">The Solution</h2>
         </div>
         <div>
             <ul>
@@ -107,7 +116,7 @@
 
         <!-- Design Process -->
             <div>
-                <h2>Design Process</h2>
+                <h2 class="bar">Design Process</h2>
             </div>
             <div>
                 <picture>
@@ -118,7 +127,7 @@
         
             <!-- User Research -->
             <div>
-                <h2>User Research</h2>
+                <h2 class="bar" >User Research</h2>
             </div>
             <div>
                 <p>While conducting research, I came up with a list of questions to interview real users. This was done to better understand their needs and experiences. While doing so, I found some patterns that emerged:</p>
@@ -132,7 +141,7 @@
 
             <!-- Target Audience -->
             <div>
-                <h2>Target Audience</h2>
+                <h2 class="bar">Target Audience</h2>
             </div>
             <div>
                 <p>Adults aged 25-60 who like to cook Indian cuisine while maintaining their health requirements.</p>
@@ -140,7 +149,7 @@
 
             <!-- User Personas -->
             <div>
-                <h2>User Personas</h2>
+                <h2 class="bar">User Personas</h2>
             </div>
             <div>
                 <picture>
@@ -152,14 +161,14 @@
                     <img src="img/healthy-indian-cooking/07hic-user-persona@2x.png" width="800" alt="Healthy Indian Cooking">
                 </picture>  
                 <picture>
-                    <source srcset="img/healthy-indian-cooking/08hic-user-persona@1x.png@1x.png" media="(max-width:767px)">
+                    <source srcset="img/healthy-indian-cooking/08hic-user-persona@1x.png" media="(max-width:767px)">
                     <img src="img/healthy-indian-cooking/08hic-user-persona@2x.png" width="800" alt="Healthy Indian Cooking">
                 </picture>  
              </div>
 
             <!-- User Flows -->
              <div>
-                <h2>User Flows</h2>
+                <h2 class="bar">User Flows</h2>
             </div>
             <div>
                 <picture>
@@ -170,7 +179,7 @@
 
              <!-- Low-Fidelity Sketches -->
              <div>
-                 <h2>Low Fidelity Sketches</h2>
+                 <h2 class="bar">Low Fidelity Sketches</h2>
             </div>
             <div>
                  <picture>
@@ -181,7 +190,7 @@
 
             <!-- User Journey -->
             <div>
-                <h2>User Journey: Trsting Out my Prototype</h2>
+                <h2 class="bar">User Journey: Trsting Out my Prototype</h2>
             </div>
             <div>
                 <picture>
@@ -192,18 +201,18 @@
                 
              <!-- Mid-Fidelity Screens -->
             <div>
-                <h2>Mid Fidelity Screens</h2>
+                <h2 class="bar">Mid Fidelity Screens</h2>
             </div>
             <div>
                 <picture>
-                        <source srcset="img/healthy-indian-cooking/12hic-mid-fidelity@1x.jpg" media="(max-width:767px)">
+                        <source srcset="img/healthy-indian-cooking/12hic-mid-fidelity@1x.png" media="(max-width:767px)">
                         <img src="img/healthy-indian-cooking/12hic-mid-fidelity@2x.jpg" width="800" alt="Healthy Indian Cooking">
                     </picture>
             </div>
 
              <!-- Mood Board -->
             <div>
-                <h2>Mood Board</h2>
+                <h2 class="bar">Mood Board</h2>
             </div>
             <div>
                 <picture>
@@ -214,7 +223,7 @@
                     
             <!-- Style Guide -->
             <div>
-                <h2>Style Guide</h2>
+                <h2 class="bar">Style Guide</h2>
             </div>
             <!--Logo & Icons--> 
             <div>
@@ -272,7 +281,7 @@
 
             <!--Imagery-->
             <div>
-                <h2>Imagery</h2>
+                <h2 class="bar">Imagery</h2>
             </div>
             <div>
                 <picture>
@@ -284,18 +293,14 @@
 
             <!--Recipe Card-->
             <div>
-                <h2>Recipe Card</h2>
+                <h2 class="bar">Recipe Card</h2>
             </div>
             <div>
-                <picture>
-                    <source srcset="img/healthy-indian-cooking/20hic-recipe-card@1x.png" media="(max-width:767px)">
-                    <img src="img/healthy-indian-cooking/20hic-recipe-card@2x.png" width="800" alt="Healthy Indian Cooking">
-                </picture>
-            </div>
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/822810425?h=c39da4dcc7&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>            </div>
 
             <!--Final Screens-->
             <div>
-                <h2>Final Screens</h2>
+                <h2 class="bar">Final Screens</h2>
             </div>
             <div>
                 <picture>
@@ -313,7 +318,7 @@
             </div>
             <!--Prototype-->
             <div>
-                <h2>Take a look at my prototype below</h2>
+                <h2 class="bar">Take a look at my prototype below</h2>
              </div>
             <div>
                 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIvytbtnnIkGehHQjuVMt1f%2F3--Healthy-Indian-Cooking%3Fpage-id%3D105%253A6220%26type%3Ddesign%26node-id%3D105-6266%26viewport%3D442%252C389%252C0.15%26scaling%3Dscale-down%26starting-point-node-id%3D105%253A6251" allowfullscreen></iframe>
@@ -321,7 +326,7 @@
     
             <!--Project Retrospective-->
             <div>
-                <h2>Project Retrospective</h2>
+                <h2 class="bar">Project Retrospective</h2>
                 <h3>Challenges</h3>
                 <p>I came across some roadblocks while designing by responsive screens. I was confused and had to watch some tutorials to figure out different breakpoints for my responsive web app. In the end, although time consuming, I was able to design all my screens so that they were responsive to all breakpoints.</p>
                 <h3>Takeaways</h3>
@@ -336,7 +341,7 @@
             <br><br><hr>
 
             <!--Back to Top-->
-            <p><a href="#top">Back to Top</a></p>
+            <p><a href="#top" class="inactive-button">Back to Top</a></p>
     </main>
 
     <footer id="contact">
@@ -346,7 +351,7 @@
         <div>
             <p>Looking for a designer for your project or want to collaborate? I'd love to hear from you!</p>
         </div>
-        <div> <a href="mailto:plumpywump@gmail.com">Send Email</a> </div>
+        <div> <a href="mailto:plumpywump@gmail.com" class="primary-button">Send Email</a> </div>
         <br>
         <div>
             <!--Linkedin-->

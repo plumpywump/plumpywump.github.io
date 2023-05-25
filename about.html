@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"  href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,21 +21,21 @@
         <div>
             <img src="svg/shwetha-logo2.svg" width="250" alt="Shwetha Elisha Logo">
             <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <a href="index.html" class="inactive-button-fixed">Work</a>
+                <a href="about.html" class="primary-button-fixed">About</a>
+                <a href="#contact" class="inactive-button-fixed">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
         <div>
-            <picture>
+            <div>
+                <picture>
                 <source srcset="img/shwetha-profile-photo@1x.png" media="(max-width:200px)">
                 <img src="img/shwetha-profile-photo@2x.png" width="200" alt="Shwetha Elisha Profile Photo">
-            </picture>
+                </picture>
+            </div>
             <h1>My Story</h1>
             <p>Hello, My name is Shwetha Elisha <em>(Pronounced Sh-way-tha El-eye-sha)</em>. I have been drawing every since I was tiny, I’m much older now, but still tiny! I grew up in Bangalore, India and now live in the US. I have a background in Illustration, Graphic Design and Fine Art <em>(MFA)</em>. In my free time, I love curling up with a good book and a steaming cup of chai. I also love picking up as many art and craft hobbies as I can <em>(my house is littered with the results of my artistic endeavors)</em>. I have a hunger for learning and trying out new things.</p>
             <br><hr><br>
@@ -72,13 +78,14 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Java Script</li>
+                <li>GitHub</li>
             </ul>
             <br><hr><br>
         </div>
-        <a href="files/shwetha-2023-cv.pdf" target="blank"> Download my CV</a>
+        <a href="files/shwetha-2023-cv.pdf" target="blank" class="primary-button"> Download my CV</a>
 
         <!--Back to Top-->
-        <p><a href="#top">Back to Top</a></p>
+        <p><a href="#top" class="inactive-button">Back to Top</a></p>
     </main>
 
     <footer id="contact">
@@ -88,7 +95,7 @@
         <div>
             <p>Looking for a designer for your project or want to collaborate? I'd love to hear from you!</p>
         </div>
-        <div> <a href="mailto:plumpywump@gmail.com">Send Email</a> </div>
+        <div> <a href="mailto:plumpywump@gmail.com" class="primary-button">Send Email</a> </div>
         <br>
         <div>
             <!--Linkedin-->

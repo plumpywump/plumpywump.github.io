@@ -1,1 +1,177 @@
-body {background-color:#EBEBEB;}
+/*Colours used:
+Primary: White #FFFFFF
+Text: Coal #1C1C1C
+Accent: Goldenrod #FFC21A
+Accent: Candy Apple #F04E49
+Inactive Light Grey: #EBEBEB
+Inactive Dark Grey: #999999*/
+
+body 
+{   background-color:#FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #1C1C1C;    }
+
+h1, h2, h3, h4
+{line-height: 1.4;}
+
+h1
+{font-size: 2.2em;
+font-weight: 700;}
+
+h2
+{font-size: 2em;
+font-weight: 600;}
+
+h3
+{font-size: 1.6em;
+font-weight: 500;}
+
+h4
+{font-size: 1.4em;
+font-weight: 400;}
+
+img
+{width: 100%;}
+
+.bar
+{text-decoration: underline;
+    text-underline-offset: 16px;
+    text-decoration-color: #FFC21A;
+    text-decoration-thickness: 8px;
+}
+
+a 
+{
+    color: #1C1C1C;
+    text-decoration: none; /* No underlining */
+}
+
+  a:hover,
+  a:focus 
+  {
+    color: #1C1C1C;
+    text-decoration: none; /* Underlining when hovering over a link */
+
+  }
+  a:active { /* selected link */
+    color: #F04E49;
+  }
+
+  .primary-button
+  {
+    display: inline;
+    background-color: #FFC21A;
+    color: #1C1C1C;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    border: #1C1C1C 2px solid;
+    transition: 0.2s opacity;
+}
+
+.primary-button:hover
+{
+    opacity: 0.7; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}  
+
+.primary-button:active
+{
+    color: #999999;
+}
+
+.primary-button-fixed
+{
+ background-color: #FFC21A;
+  color: #1C1C1C;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 128px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+  border-radius: 4px;
+  border: #1C1C1C 2px solid;
+  transition: 0.2s opacity;
+}
+
+.primary-button-fixed:hover
+{
+    opacity: 0.7; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}  
+
+.primary-button-fixed:active
+{
+  color: #999999;
+}
+
+.inactive-button
+{
+    display: inline;
+    background-color: #ebebeb;
+    color: #999999;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid;
+    border-radius: 4px;
+    transition: 0.2s opacity;
+}
+
+.inactive-button:hover
+{
+    opacity: 0.7; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}  
+
+.inactive-button:active
+{
+    background-color: #FFC21A;
+    color: #1C1C1C;
+}
+
+.inactive-button-fixed
+{
+    display: inline-block;
+    background-color: #ebebeb;
+    color: #999999;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    width: 128px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid;
+    border-radius: 4px;
+    transition: 0.2s opacity;
+}
+
+.inactive-button-fixed:hover
+{
+    opacity: 0.7; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}  
+
+.inactive-button-fixed:active
+{
+    background-color: #FFC21A;
+    color: #1C1C1C;
+}
+
+.my-selection:hover
+{
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}  
