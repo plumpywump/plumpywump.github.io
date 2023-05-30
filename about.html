@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet"  href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,105 +20,140 @@
 <body id="top">
     <!-- Header Section -->
     <header>
-        <div>
-            <img src="svg/shwetha-logo2.svg" width="250" alt="Shwetha Elisha Logo">
-            <nav>
-                <a href="index.html" class="inactive-button-fixed">Work</a>
-                <a href="about.html" class="primary-button-fixed">About</a>
-                <a href="#contact" class="inactive-button-fixed">Contact</a>
-            </nav>
+        <div class="container">
+            <img class="logo" src="svg/shwetha-logo2.svg" width="250" alt="Shwetha Elisha Logo">
+            <div>
+                <nav id="nav-bar">
+
+                    <a href="index.html" class="inactive-button-fixed">Work</a>
+                    <a href="about.html" class="primary-button-fixed">About</a>
+                    <a href="#contact" class="inactive-button-fixed">Contact</a>
+
+                </nav>
+            </div>
         </div>
     </header>
 
     <main>
-        <div id="about">
-            <div class="container">
+        <div id="about" class="container">
+            <div class="row">
                 <picture>
-                <source srcset="img/shwetha-profile-photo@1x.png" media="(max-width:200px)">
-                <img src="img/shwetha-profile-photo@2x.png" width="200" alt="Shwetha Elisha Profile Photo">
+                    <source srcset="img/shwetha-profile-photo@1x.png" media="(max-width:200px)">
+                    <img src="img/shwetha-profile-photo@2x.png" width="200" alt="Shwetha Elisha Profile Photo">
                 </picture>
-            </div>
-            <h1>My Story</h1>
-            <p>Hello, My name is Shwetha Elisha <em>(Pronounced Sh-way-tha El-eye-sha)</em>. I have been drawing every since I was tiny, I’m much older now, but still tiny! I grew up in Bangalore, India and now live in the US. I have a background in Illustration, Graphic Design and Fine Art <em>(MFA)</em>. In my free time, I love curling up with a good book and a steaming cup of chai. I also love picking up as many art and craft hobbies as I can <em>(my house is littered with the results of my artistic endeavors)</em>. I have a hunger for learning and trying out new things.</p>
-            <br><hr><br>
-        </div>
-        <div>
-            <h1>My Work Ethic</h1>
-            <p>I am a results-oriented, ambitious, hardworking self-starter with a ton of ideas and an eye for design. I’m highly regarded for
-                out-of-the-box thinking, working efficiently, juggling multiple tasks, prioritizing, meeting deadlines and achieving high standards
-                in creative execution.</p>
-            <br><hr><br>
-        </div>
-        <div>
-            <h1>My Skills</h1>
-            <ul>
-                <li>User Interface Design (UI)</li>
-                <li>User Experience Design (UX)</li>
-                <li>Product Design</li>
-                <li>User-centered Design</li>
-                <li>Wireframing</li>
-                <li>Graphic Design</li>
-                <li>Illustration</li>
-                <li>Brand Development</li>
-                <li>Web Design</li>
-                <li>App Design</li>
-                <li>Typography</li>
-                <li>Frontend Development</li>
-            </ul>
-            <br><hr><br>
-        </div>
-        <div>
-            <h1>My Toolkit</h1>
-            <ul>
-                <li>Figma</li>
-                <li>Adobe XD (UX)</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe InDesign</li>
-                <li>Balsamiq</li>
-                <li>Visual Studio</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Java Script</li>
-                <li>GitHub</li>
-            </ul>
-            <br><hr><br>
-        </div>
-        <a href="files/shwetha-2023-cv.pdf" target="blank" class="primary-button"> Download my CV</a>
+                <div class="center-text">
+                    <h1 class="bar">My Story</h1>
+                </div>
+                <p>Hello, My name is Shwetha Elisha <em>(Pronounced Sh-way-tha El-eye-sha)</em>. I have been drawing
+                    every
+                    since I was tiny, I’m much older now, but still tiny! I grew up in Bangalore, India and now live in
+                    the
+                    US. I have a background in Illustration, Graphic Design and Fine Art <em>(MFA)</em>. In my free
+                    time, I
+                    love curling up with a good book and a steaming cup of chai. I also love picking up as many art and
+                    craft hobbies as I can <em>(my house is littered with the results of my artistic endeavors)</em>. I
+                    have
+                    a hunger for learning and trying out new things.</p>
 
-        <!--Back to Top-->
-        <p><a href="#top" class="inactive-button">Back to Top</a></p>
+            </div>
+
+
+            <div class="row">
+                <div class="center-text">
+                    <h1 class="bar">My Work Ethic</h1>
+                </div>
+                <p>I am a results-oriented, ambitious, hardworking self-starter with a ton of ideas and an eye for
+                    design. I’m highly regarded for
+                    out-of-the-box thinking, working efficiently, juggling multiple tasks, prioritizing, meeting
+                    deadlines and achieving high standards
+                    in creative execution.</p>
+
+            </div>
+            <div class="row">
+                <div class="center-text">
+                    <h1 class="bar">My Skills</h1>
+
+                    <div>
+
+                        <div class="skills-buttons"> User Interface Design (UI) </div>
+                        <div class="skills-buttons">User Experience Design (UX)</div>
+                        <div class="skills-buttons">Product Design</div>
+                        <div class="skills-buttons">User-centered Design</div>
+                        <div class="skills-buttons">Wireframing</div>
+                        <div class="skills-buttons">Graphic Design</div>
+                        <div class="skills-buttons">Illustration</div>
+                        <div class="skills-buttons">Brand Development</div>
+                        <div class="skills-buttons">Web Design</div>
+                        <div class="skills-buttons">App Design</div>
+                        <div class="skills-buttons">Typography</div>
+                        <div class="skills-buttons">Frontend Development</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="center-text">
+                    <h1 class="bar">My Toolkit</h1>
+                    <div>
+                        <div class="skills-buttons">Figma</div>
+                        <div class="skills-buttons">Adobe XD (UX)</div>
+                        <div class="skills-buttons">Adobe Illustrator</div>
+                        <div class="skills-buttons">Adobe Photoshop</div>
+                        <div class="skills-buttons">Adobe InDesign</div>
+                        <div class="skills-buttons">Balsamiq</div>
+                        <div class="skills-buttons">Visual Studio</div>
+                        <div class="skills-buttons">HTML</div>
+                        <div class="skills-buttons">CSS</div>
+                        <div class="skills-buttons">Java Script</div>
+                        <div class="skills-buttons">GitHub</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="center-text">
+                <div class="row">
+                    <a href="files/shwetha-2023-cv.pdf" target="blank" class="primary-button"> Download my CV</a>
+                </div>
+            </div>
+
+            <!--Back to Top-->
+            <div class="center-text">
+                <a href="#top" class="inactive-button">Back to Top</a>
+            </div>
+        </div>
     </main>
 
     <footer id="contact">
-        <div>
-            <h3>Get in touch!</h3>
-        </div>
-        <div>
-            <p>Looking for a designer for your project or want to collaborate? I'd love to hear from you!</p>
-        </div>
-        <div> <a href="mailto:plumpywump@gmail.com" class="primary-button">Send Email</a> </div>
-        <br>
-        <div>
-            <!--Linkedin-->
-            <a href="https://www.linkedin.com/in/shwethaelisha/" target="_blank">
-                <img width="32" src="/svg/linkedin-icon.svg" alt="linkedin logo">
-            </a>
-            <!--Behance-->
-            <a href="https://www.behance.net/plumpywump" target="_blank">
-                <img width="32" src="/svg/behance-icon.svg" alt="behance logo">
-            </a>
-            <!--Dribbble-->
-            <a href="https://dribbble.com/plumpywump" target="_blank">
-                <img width="32" src="svg/dribbble-icon.svg" alt="dribbble logo">
-            </a>
-            <!--Facebook-->
-            <a href="https://facebook.com/plumpywump" target="_blank">
-                <img width="32" src="svg/facebook-icon.svg" alt="facebook logo">
-            </a>
-        </div>
-        <div>
-            <p>Copyright Shwetha Elisha 2023</p>
+        <div class="container">
+            <div class="center-text">
+                <h3>Get in touch!</h3>
+                <div>
+                    <p>Looking for a designer for your project or want to collaborate? I'd love to hear from you!</p>
+                </div>
+                <div> <a href="mailto:plumpywump@gmail.com" class="primary-button">Send me an Email</a> </div>
+                <br>
+                <div>
+                    <!--Linkedin-->
+                    <a class="social-icons" href="https://www.linkedin.com/in/shwethaelisha/" target="_blank">
+                        <img src="/svg/linkedin-icon.svg" alt="linkedin logo">
+                    </a>
+                    <!--Behance-->
+                    <a class="social-icons" href="https://www.behance.net/plumpywump" target="_blank">
+                        <img src="/svg/behance-icon.svg" alt="behance logo">
+                    </a>
+                    <!--Dribbble-->
+                    <a class="social-icons" href="https://dribbble.com/plumpywump" target="_blank">
+                        <img src="svg/dribbble-icon.svg" alt="dribbble logo">
+                    </a>
+                    <!--Facebook-->
+                    <a class="social-icons" href="https://facebook.com/plumpywump" target="_blank">
+                        <img src="svg/facebook-icon.svg" alt="facebook logo">
+                    </a>
+                </div>
+            </div>
+            <div class="center-text">
+                <p>&copy; Shwetha Elisha 2023</p>
+            </div>
         </div>
     </footer>
 </body>
