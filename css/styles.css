@@ -65,9 +65,10 @@ main {
 
 .container {
     display: inline-block;
+    text-align: center;
     margin: auto;
-    max-width: 1200px;
-    padding: 0 16px 32px 16px;
+    max-width: 100%;
+    padding: 24px 16px 24px 16px;
 }
 
 .row {
@@ -76,19 +77,17 @@ main {
     border-bottom: #999999 1px solid;
 }
 
-.social-icons {
-    display: inline-block;
-    margin-left: 16px;
-    margin-right: 16px;
-    max-width: 32px;
-}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .logo {
-    max-width: 250px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 16px;
 
 }
 
@@ -321,14 +320,44 @@ a:active {
 @media screen and (min-width: 640px) {
     header {
         text-align: unset;
-        padding: 20px 0 13px;
+        margin: 0 0 0;
+        padding-top: 8px;
     }
 
-    nav {
-        width: auto;
-        float: right;
-        margin-top: 4px;
+    .container {
+        width: 100%;
+        text-align: unset;
+
     }
+
+    .logo {
+        float: left;
+        height: 100%;
+        padding: 0 0 0 0;
+        min-height: 44px;
+    }
+
+    .div-bar1 {
+        float: right;
+    }
+
+    .div-bar1 .logo {
+        display: inline-flex;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    [class*="col-"] {
+        float: left;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+  
 }
 
 /*Large Devices 1024px and Larger*/
