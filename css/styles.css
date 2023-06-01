@@ -9,8 +9,22 @@ Inactive Dark Grey: #999999*/
 header {
     background-color: #FFFFFF;
     text-align: center;
-    padding: 16px 16px 0 16px;
     position: relative;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-bar li {
+    display: inline-block;
 }
 
 img {
@@ -44,17 +58,13 @@ footer {
 }
 
 main {
-    padding-top: 32px;
+    padding-top: 16px;
 }
+
 /* Layout Styling*/
 
-.background {
-    background-color: #F2F2F2;
-    margin: 0;
-    padding: 1em;
-}
-
 .container {
+    display: inline-block;
     margin: auto;
     max-width: 1200px;
     padding: 0 16px 32px 16px;
@@ -75,13 +85,17 @@ main {
 
 .logo {
     max-width: 250px;
-    margin: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .hero-img {
     max-width: 200px;
-    margin-left: 95px;
-    margin-right: 95px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 16px;
 }
 
@@ -91,8 +105,8 @@ main {
 
 .about-img {
     max-width: 200px;
-    margin-left: 95px;
-    margin-right: 95px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hic-logo {
@@ -112,8 +126,8 @@ main {
 }
 
 .body-padding {
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 
@@ -212,7 +226,7 @@ a:active {
     font-size: 1em;
     font-weight: 700;
     text-align: center;
-    width: 104px;
+    width: 80px;
     padding: 8px 0 8px 0;
     border-radius: 4px;
     border: #1C1C1C 2px solid;
@@ -262,7 +276,7 @@ a:active {
     font-size: 1em;
     font-weight: 700;
     text-align: center;
-    width: 104px;
+    width: 80px;
     padding: 8px 0 8px 0;
     border: 2px solid;
     border-radius: 4px;
@@ -301,3 +315,26 @@ a:active {
     /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
+
+/*Medium Devices 640px and Larger*/
+
+@media screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+}
+
+/*Large Devices 1024px and Larger*/
+
+@media screen and (min-width: 1024px) {}
+
+/*XL Devices 1440px and Larger*/
+
+@media screen and (min-width: 1440px) {}
