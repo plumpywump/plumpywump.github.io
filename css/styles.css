@@ -165,7 +165,7 @@ h4 {
 }
 
 p {
-    font-size: 0.75em ;
+    font-size: 0.75em;
     font-weight: 300;
 }
 
@@ -211,7 +211,6 @@ a:active {
     padding: 8px 16px 8px 16px;
     border-radius: 4px;
     transition: 0.2s opacity;
-    transition-property: opacity;
     margin: auto;
 }
 
@@ -239,7 +238,6 @@ a:active {
     border-radius: 4px;
     border: #1C1C1C 2px solid;
     transition: 0.2s opacity;
-    transition-property: opacity;
 }
 
 .primary-button-fixed:hover {
@@ -262,7 +260,6 @@ a:active {
     padding: 8px 16px 8px 16px;
     border-radius: 4px;
     transition: 0.2s opacity;
-    transition-property: opacity;
 }
 
 .inactive-button:hover {
@@ -289,7 +286,6 @@ a:active {
     border: 2px solid;
     border-radius: 4px;
     transition: 0.2s opacity;
-    transition-property: opacity;
 }
 
 .inactive-button-fixed:hover {
@@ -322,6 +318,62 @@ a:active {
     opacity: 0.8;
     /* Reduces the opacity of the button to 80% */
     text-decoration: none;
+}
+
+/*Animations*/
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation-duration: 5s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 15s cloud-move-reverse infinite alternate linear;
 }
 
 /*Medium Devices 640px and Larger*/
@@ -373,6 +425,7 @@ a:active {
         margin-bottom: 24px;
         border-bottom: unset;
     }
+
     .body-padding {
         margin-left: 48px;
         margin-right: 48px;
@@ -382,10 +435,11 @@ a:active {
 /*Large Devices 1024px and Larger*/
 
 @media screen and (min-width: 1024px) {
+
     .container {
         min-width: 1024px;
         margin: auto;
-      }
+    }
 
     header {
         text-align: unset;
@@ -398,6 +452,11 @@ a:active {
         height: 100%;
         padding: 0 0 0 0;
         min-height: 44px;
+    }
+
+    .hic-logo {
+        max-width: 360px;
+        margin: auto;
     }
 
     .div-bar1 {
@@ -428,11 +487,52 @@ a:active {
         margin-bottom: 24px;
         border-bottom: unset;
     }
+
     .body-padding {
-        margin-left: 120px;
-        margin-right: 120px;
+        margin-left: 88px;
+        margin-right: 88px;
     }
-}
+
+    h1 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 1.375em;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 1.25em;
+        font-weight: 300;
+    }
+
+    p {
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .hero-img {
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 16px;
+    }
+
+    .main-images {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+} 
 
 /*XL Devices 1440px and Larger*/
 
