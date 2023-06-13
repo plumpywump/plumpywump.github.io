@@ -65,15 +65,14 @@ main {
 
 .container {
     display: inline-block;
-    text-align: center;
     margin: auto;
     max-width: 100%;
     padding: 24px 16px 24px 16px;
 }
 
 .row {
-    margin: 32px 0;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    margin-bottom: 24px;
     border-bottom: #999999 1px solid;
 }
 
@@ -81,7 +80,14 @@ main {
     content: "";
     clear: both;
     display: table;
-  }
+}
+
+.social-icons {
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 32px;
+}
 
 .logo {
     max-width: 200px;
@@ -110,8 +116,7 @@ main {
 
 .hic-logo {
     max-width: 170px;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin: auto;
 }
 
 .header-shadow {
@@ -145,7 +150,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.125em;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -156,7 +161,12 @@ h3 {
 
 h4 {
     font-size: 0.875em;
-    font-weight: 400;
+    font-weight: 300;
+}
+
+p {
+    font-size: 0.75em ;
+    font-weight: 300;
 }
 
 
@@ -176,14 +186,12 @@ h4 {
 a {
     color: #1C1C1C;
     text-decoration: none;
-    /* No underlining */
 }
 
 a:hover,
 a:focus {
     color: #1C1C1C;
     text-decoration: none;
-    /* Underlining when hovering over a link */
 }
 
 a:active {
@@ -203,11 +211,12 @@ a:active {
     padding: 8px 16px 8px 16px;
     border-radius: 4px;
     transition: 0.2s opacity;
+    transition-property: opacity;
+    margin: auto;
 }
 
 .primary-button:hover {
     opacity: 0.7;
-    /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
 
@@ -230,11 +239,11 @@ a:active {
     border-radius: 4px;
     border: #1C1C1C 2px solid;
     transition: 0.2s opacity;
+    transition-property: opacity;
 }
 
 .primary-button-fixed:hover {
     opacity: 0.7;
-    /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
 
@@ -253,11 +262,11 @@ a:active {
     padding: 8px 16px 8px 16px;
     border-radius: 4px;
     transition: 0.2s opacity;
+    transition-property: opacity;
 }
 
 .inactive-button:hover {
     opacity: 0.7;
-    /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
 
@@ -280,11 +289,11 @@ a:active {
     border: 2px solid;
     border-radius: 4px;
     transition: 0.2s opacity;
+    transition-property: opacity;
 }
 
 .inactive-button-fixed:hover {
     opacity: 0.7;
-    /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
 
@@ -327,7 +336,6 @@ a:active {
     .container {
         width: 100%;
         text-align: unset;
-
     }
 
     .logo {
@@ -347,22 +355,84 @@ a:active {
 
     .col-md-6 {
         width: 50%;
+        padding: 24px;
     }
 
     [class*="col-"] {
         float: left;
     }
+
     .row::after {
         content: "";
         clear: both;
         display: table;
-      }
-  
+    }
+
+    .row {
+        padding-top: unset;
+        margin-bottom: 24px;
+        border-bottom: unset;
+    }
+    .body-padding {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
 }
 
 /*Large Devices 1024px and Larger*/
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .container {
+        min-width: 1024px;
+        margin: auto;
+      }
+
+    header {
+        text-align: unset;
+        margin: 0 0 0;
+        padding-top: 8px;
+    }
+
+    .logo {
+        float: left;
+        height: 100%;
+        padding: 0 0 0 0;
+        min-height: 44px;
+    }
+
+    .div-bar1 {
+        float: right;
+    }
+
+    .div-bar1 .logo {
+        display: inline-flex;
+    }
+
+    .col-lg-7 {
+        width: 50%;
+        padding: 24px;
+    }
+
+    [class*="col-"] {
+        float: left;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .row {
+        padding-top: unset;
+        margin-bottom: 24px;
+        border-bottom: unset;
+    }
+    .body-padding {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+}
 
 /*XL Devices 1440px and Larger*/
 
