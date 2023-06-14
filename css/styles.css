@@ -128,6 +128,12 @@ main {
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.12)) drop-shadow(0 3px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0 1px 5px rgba(0, 0, 0, 0.12)) drop-shadow(0 -1px 2px rgba(0, 0, 0, 0.1));
 }
 
+.project-shadow {
+border-radius: 4px;
+filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.06)) drop-shadow(0 1px 6px rgba(0, 0, 0, 0.06)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.10)) drop-shadow(0 -1px 2px rgba(0, 0, 0, 0.1));
+}
+
+
 /*Text Stylings*/
 
 .center-text {
@@ -155,22 +161,22 @@ h1 {
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1.25em;
     font-weight: 600;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.125em;
     font-weight: 500;
 }
 
 h4 {
-    font-size: 0.875em;
+    font-size: 1em;
     font-weight: 300;
 }
 
 p {
-    font-size: 0.75em;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -183,7 +189,7 @@ p {
     text-underline-offset: 8px;
     text-decoration-color: #FFC21A;
     text-decoration-thickness: 4px;
-    line-height: 2;
+    line-height: 1.6;
 }
 
 /*Links*/
@@ -321,7 +327,6 @@ a:active {
 
 .my-selection:hover {
     opacity: 0.8;
-    /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
 
@@ -393,6 +398,7 @@ a:active {
     .container {
         width: 100%;
         text-align: unset;
+        padding: 16px 32px 16px 32px;
     }
 
     .logo {
@@ -400,6 +406,13 @@ a:active {
         height: 100%;
         padding: 0 0 0 0;
         min-height: 44px;
+    }
+
+    .hero-img {
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 16px;
     }
 
     .div-bar1 {
@@ -435,110 +448,139 @@ a:active {
         margin-left: 48px;
         margin-right: 48px;
     }
-}
 
-/*Large Devices 1024px and Larger*/
-
-@media screen and (min-width: 1024px) {
-
-    .container {
-        min-width: 1024px;
-        margin: auto;
-    }
-
-    header {
-        text-align: unset;
-        margin: 0 0 0;
-        padding-top: 8px;
-    }
-
-    .logo {
-        float: left;
-        height: 100%;
-        padding: 0 0 0 0;
-        min-height: 44px;
-    }
-
-    .hic-logo {
-        max-width: 360px;
-        margin: auto;
-    }
-
-    .div-bar1 {
-        float: right;
-    }
-
-    .div-bar1 .logo {
-        display: inline-flex;
-    }
-
-    .col-lg-7 {
-        width: 50%;
-        padding: 24px;
-    }
-
-    [class*="col-"] {
-        float: left;
-    }
-
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-    .row {
-        padding-top: unset;
-        margin-bottom: 24px;
-        border-bottom: unset;
-    }
-
-    .body-padding {
-        margin-left: 88px;
-        margin-right: 88px;
+    .social-icons {
+        display: inline-block;
+        margin-left: 24px;
+        margin-right: 24px;
+        max-width: 40px;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 700;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.3755em;
         font-weight: 600;
     }
 
     h3 {
-        font-size: 1.375em;
+        font-size: 1.25em;
         font-weight: 500;
     }
 
     h4 {
-        font-size: 1.25em;
-        font-weight: 300;
-    }
-
-    p {
         font-size: 1em;
         font-weight: 300;
     }
 
-    .hero-img {
-        max-width: 240px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 16px;
+    p {
+        font-size: 0.875em;
+        font-weight: 300;
     }
 
-    .main-images {
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 40px;
-        padding-bottom: 40px;
+    /*Large Devices 1024px and Larger*/
+
+    @media screen and (min-width: 1024px) {
+
+        .container {
+            min-width: 1024px;
+            margin: auto;
+            padding: 16px 48px 16px 48px;
+        }
+
+        header {
+            text-align: unset;
+            margin: 0 0 0;
+            padding-top: 8px;
+        }
+
+        .logo {
+            float: left;
+            height: 100%;
+            padding: 0 0 0 0;
+            min-height: 44px;
+        }
+
+        .hic-logo {
+            max-width: 360px;
+            margin: auto;
+        }
+
+        .div-bar1 {
+            float: right;
+        }
+
+        .div-bar1 .logo {
+            display: inline-flex;
+        }
+
+        .col-lg-7 {
+            width: 50%;
+            padding: 24px;
+        }
+
+        [class*="col-"] {
+            float: left;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .row {
+            padding-top: unset;
+            margin-bottom: 24px;
+            border-bottom: unset;
+        }
+
+        .body-padding {
+            margin-left: 88px;
+            margin-right: 88px;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.375em;
+            font-weight: 500;
+        }
+
+        h4 {
+            font-size: 1.25em;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 1em;
+            font-weight: 300;
+        }
+
+        .hero-img {
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 16px;
+        }
+
+        .main-images {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
     }
-} 
-
-/*XL Devices 1440px and Larger*/
-
-@media screen and (min-width: 1440px) {}
+}
