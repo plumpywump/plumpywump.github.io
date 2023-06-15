@@ -94,6 +94,22 @@ main {
     max-width: 32px;
 }
 
+.bottom-projects-container {
+    display: inline-block;
+    margin: auto;
+    max-width: 100%;
+    padding: 24px 16px 24px 16px;
+    text-align: center;
+}
+
+
+.bottom-projects {
+    display: inline-block;
+    max-width: 48%;
+    padding: 0 4px 8px 4px;
+    text-align: center;
+}
+
 .logo {
     max-width: 200px;
     margin-left: auto;
@@ -129,8 +145,8 @@ main {
 }
 
 .project-shadow {
-border-radius: 4px;
-filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.06)) drop-shadow(0 1px 6px rgba(0, 0, 0, 0.06)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.10)) drop-shadow(0 -1px 2px rgba(0, 0, 0, 0.1));
+    border-radius: 4px;
+    filter: drop-shadow(1px 2px 6px rgba(0, 0, 0, 0.06)) drop-shadow(0 1px 6px rgba(0, 0, 0, 0.06)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.10)) drop-shadow(0 -1px 2px rgba(0, 0, 0, 0.1));
 }
 
 
@@ -330,61 +346,6 @@ a:active {
     text-decoration: none;
 }
 
-/*Animations*/
-
-@keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-
-    50% {
-        fill: #fcffad;
-    }
-
-    100% {
-        fill: #f76414;
-    }
-}
-
-.sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-
-.cloud-front {
-    animation-duration: 5s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-
-    to {
-        transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    animation: 15s cloud-move-reverse infinite alternate linear;
-}
 
 /*Medium Devices 640px and Larger*/
 
@@ -399,6 +360,19 @@ a:active {
         width: 100%;
         text-align: unset;
         padding: 16px 32px 16px 32px;
+    }
+
+    .bottom-projects-container {
+        max-width: 100%;
+        padding: 16px 32px 16px 32px;
+        text-align: center;
+    }
+
+    .bottom-projects {
+        display: inline-block;
+        max-width: 30%;
+        padding: 4px 0 8px 04px;
+        text-align: center;
     }
 
     .logo {
@@ -445,8 +419,17 @@ a:active {
     }
 
     .body-padding {
-        margin-left: 48px;
-        margin-right: 48px;
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .main-images {
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     .social-icons {
@@ -489,6 +472,19 @@ a:active {
             min-width: 1024px;
             margin: auto;
             padding: 16px 48px 16px 48px;
+        }
+
+        .bottom-projects-container {
+            max-width: 100%;
+            padding: 16px 32px 16px 32px;
+            text-align: center;
+        }
+    
+        .bottom-projects {
+            display: inline-block;
+            max-width: 33%;
+            padding: 4px 0 8px 04px;
+            text-align: center;
         }
 
         header {
@@ -539,8 +535,9 @@ a:active {
         }
 
         .body-padding {
-            margin-left: 88px;
-            margin-right: 88px;
+            margin: auto;
+            padding-left: 80px;
+            padding-right: 80px;
         }
 
         h1 {
