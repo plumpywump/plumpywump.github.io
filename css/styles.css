@@ -12,23 +12,16 @@ html {
 
 header {
     background-color: #FFFFFF;
-    text-align: center;
     position: relative;
 }
 
-nav {
-    width: 100%;
-}
+
 
 .nav-bar ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
-}
-
-.nav-bar li {
-    display: inline-block;
 }
 
 img {
@@ -69,11 +62,40 @@ main {
 /* Layout Styling*/
 
 .container {
-    display: inline-block;
     margin: auto;
     max-width: 100%;
-    padding: 24px 16px 24px 16px;
+    padding: 20px 16px 16px 16px;
 }
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+    padding: 16px 0 0;
+}
+
+.navtoggle.responsive li {
+    display: inline-block;
+    padding: 8px 0;
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 8px;
+}
+
 
 .row {
     padding-top: 24px;
@@ -114,7 +136,6 @@ main {
     max-width: 200px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 16px;
 
 }
 
@@ -356,7 +377,33 @@ a:active {
         padding-top: 8px;
     }
 
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
+    .navtoggle.responsive nav {
+        padding: 0;
+    }
+
+    .navtoggle.responsive li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .navtoggle.responsive li:last-child {
+        padding: 0px;
+    }
+
+    .nav-bar li {
+        display: inline-block;
+    }
+
     .container {
+        display: inline-block;
         width: 100%;
         text-align: unset;
         padding: 16px 32px 16px 32px;
@@ -380,6 +427,7 @@ a:active {
         height: 100%;
         padding: 0 0 0 0;
         min-height: 44px;
+        max-width: 240px;
     }
 
     .hero-img {
@@ -469,9 +517,35 @@ a:active {
     @media screen and (min-width: 1024px) {
 
         .container {
+            display: inline-block;
             min-width: 1024px;
             margin: auto;
             padding: 16px 48px 16px 48px;
+        }
+
+        .navtoggle li:not(:last-child) {
+            display: inline-block;
+        }
+
+        .navtoggle li:last-child {
+            display: none;
+        }
+
+        .navtoggle.responsive nav {
+            padding: 0;
+        }
+
+        .navtoggle.responsive li {
+            display: inline-block;
+            padding: 0;
+        }
+
+        .navtoggle.responsive li:last-child {
+            padding: 0px;
+        }
+
+        .nav-bar li {
+            display: inline-block;
         }
 
         .bottom-projects-container {
@@ -479,7 +553,7 @@ a:active {
             padding: 16px 32px 16px 32px;
             text-align: center;
         }
-    
+
         .bottom-projects {
             display: inline-block;
             max-width: 33%;
@@ -498,6 +572,7 @@ a:active {
             height: 100%;
             padding: 0 0 0 0;
             min-height: 44px;
+            max-width: 240px;
         }
 
         .hic-logo {

@@ -21,17 +21,20 @@
     <!-- Header Section -->
     <header class="header-shadow">
         <div class="container">
-            <a href="index.html" class="my-selection">
-                <img class="logo" src="svg/shwetha-logo2.svg" alt="Shwetha Elisha Logo">
-            </a>
-            <div class="div-bar1">
-                <nav class="nav-bar">
-                    <ul>
-                        <li><a href="index.html" class="primary-button-fixed">Work</a></li>
-                        <li><a href="about.html" class="inactive-button-fixed">About</a></li>
-                        <li><a href="#contact" class="inactive-button-fixed">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="navtoggle" id="mynavtoggle">
+                <a href="index.html" class="my-selection">
+                    <img class="logo" src="svg/shwetha-logo2.svg" alt="Shwetha Elisha Logo">
+                </a>
+                <div class="div-bar1">
+                    <nav class="nav-bar">
+                        <ul>
+                            <li><a href="index.html" class="primary-button-fixed">Work</a></li>
+                            <li><a href="about.html" class="inactive-button-fixed">About</a></li>
+                            <li><a href="#contact" onclick="menuToggle()" class="inactive-button-fixed">Contact</a></li>
+                            <li> <a href="javascript:void(0);" class="icon" onclick="menuToggle()"> <img src="svg/hamburger-icon.svg" alt="Menu"></a> </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -117,13 +120,13 @@
 
                     <div class="col-md-6 col-lg-7">
                         <a href="quick-news.html">
-                        <picture>
-                            <source class="project-shadow" srcset="img/quick-news/qn-case-study@1x.png"
-                                media="(max-width:767px)">
-                            <img src="img/quick-news/qn-case-study@2x.png" width="800" alt="Quick News"
-                                class="my-selection project-shadow">
-                        </picture>
-                    </a>
+                            <picture>
+                                <source class="project-shadow" srcset="img/quick-news/qn-case-study@1x.png"
+                                    media="(max-width:767px)">
+                                <img src="img/quick-news/qn-case-study@2x.png" width="800" alt="Quick News"
+                                    class="my-selection project-shadow">
+                            </picture>
+                        </a>
                         <h2 class="bar">News App UI/UX Case Study</h2>
                         <div>
                             <p>Quick News is a native News App designed for iOS and Android devices that provides
@@ -145,18 +148,20 @@
 
                     <div class="col-md-6 col-lg-7">
                         <a href="80s-party.html">
-                        <picture>
-                            <source class="project-shadow" srcset="img/80s-party/80-case-study@1x.png"
-                                media="(max-width:767px)">
-                            <img src="img/80s-party/80-case-study@2x.png" width="800" alt="80s Party"
-                                class="my-selection project-shadow">
-                        </picture>
-                    </a>
+                            <picture>
+                                <source class="project-shadow" srcset="img/80s-party/80-case-study@1x.png"
+                                    media="(max-width:767px)">
+                                <img src="img/80s-party/80-case-study@2x.png" width="800" alt="80s Party"
+                                    class="my-selection project-shadow">
+                            </picture>
+                        </a>
                         <h2 class="bar">Music App UI/UX Case Study</h2>
                         <div>
                             <p>80s Party is a media player app that offers users an enjoyable
-                                platform to access and explore the iconic music catalog of the 1980s. The app creates a nostalgic
-                                and immersive experience that allows users to relive the music, culture, and memories of the decade.
+                                platform to access and explore the iconic music catalog of the 1980s. The app creates a
+                                nostalgic
+                                and immersive experience that allows users to relive the music, culture, and memories of
+                                the decade.
                             </p>
                         </div>
                         <br>
@@ -210,7 +215,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
