@@ -21,17 +21,20 @@
     <!-- Header Section -->
     <header class="header-shadow">
         <div class="container">
-            <a href="index.html" class="my-selection">
-                <img class="logo" src="svg/shwetha-logo2.svg" alt="Shwetha Elisha Logo">
-            </a>
-            <div class="div-bar1">
-                <nav class="nav-bar">
-                    <ul>
-                        <li><a href="index.html" class="primary-button-fixed">Work</a></li>
-                        <li><a href="about.html" class="inactive-button-fixed">About</a></li>
-                        <li><a href="#contact" class="inactive-button-fixed">Contact</a></li>
-                    </ul>
-                </nav>
+            <div class="navtoggle" id="mynavtoggle">
+                <a href="index.html" class="my-selection">
+                    <img class="logo" src="svg/shwetha-logo2.svg" alt="Shwetha Elisha Logo">
+                </a>
+                <div class="div-bar1">
+                    <nav class="nav-bar">
+                        <ul>
+                            <li><a href="index.html" class="primary-button-fixed">Work</a></li>
+                            <li><a href="about.html" class="inactive-button-fixed">About</a></li>
+                            <li><a href="#contact" onclick="menuToggle()" class="inactive-button-fixed">Contact</a></li>
+                            <li> <a href="javascript:void(0);" class="icon" onclick="menuToggle()"> <img src="svg/hamburger-icon.svg" alt="Menu"></a> </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
