@@ -389,11 +389,6 @@ a:active {
         padding: 0;
     }
 
-    .navtoggle.responsive li {
-        display: inline-block;
-        padding: 0;
-    }
-
     .navtoggle.responsive li:last-child {
         padding: 0px;
     }
@@ -532,11 +527,6 @@ a:active {
         }
 
         .navtoggle.responsive nav {
-            padding: 0;
-        }
-
-        .navtoggle.responsive li {
-            display: inline-block;
             padding: 0;
         }
 
