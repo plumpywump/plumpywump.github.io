@@ -4,7 +4,7 @@ Text: Coal #1C1C1C
 Accent: Goldenrod #FFC21A
 Accent: Candy Apple #F04E49
 Inactive Light Grey: #EBEBEB
-Inactive Dark Grey: #999999*/
+Inactive Dark Grey: #6A6A6A*/
 
 html {
     scroll-behavior: smooth;
@@ -100,7 +100,7 @@ main {
 .row {
     padding-top: 24px;
     margin-bottom: 24px;
-    border-bottom: #999999 1px solid;
+    border-bottom: #6A6A6A 1px solid;
 }
 
 .row::after {
@@ -223,7 +223,7 @@ p {
 
 .bar {
     text-decoration: underline;
-    text-underline-offset: 8px;
+    text-underline-offset: 0.5em;
     text-decoration-color: #FFC21A;
     text-decoration-thickness: 4px;
     line-height: 1.6;
@@ -263,12 +263,12 @@ a:active {
 }
 
 .primary-button:hover {
-    opacity: 0.7;
+    opacity: 0.6;
     text-decoration: none;
 }
 
 .primary-button:active {
-    color: #999999;
+    color: #6A6A6A;
 }
 
 /* Primary Button Fixed Width*/
@@ -289,12 +289,12 @@ a:active {
 }
 
 .primary-button-fixed:hover {
-    opacity: 0.7;
+    opacity: 0.6;
     text-decoration: none;
 }
 
 .primary-button-fixed:active {
-    color: #999999;
+    color: #6A6A6A;
 }
 
 /* Inactive Button*/
@@ -311,7 +311,7 @@ a:active {
 }
 
 .inactive-button:hover {
-    opacity: 0.7;
+    opacity: 0.6;
     text-decoration: none;
 }
 
@@ -325,7 +325,7 @@ a:active {
 .inactive-button-fixed {
     display: inline-block;
     background-color: #ebebeb;
-    color: #999999;
+    color: #6A6A6A;
     font-size: 1em;
     font-weight: 700;
     text-align: center;
@@ -337,7 +337,7 @@ a:active {
 }
 
 .inactive-button-fixed:hover {
-    opacity: 0.7;
+    opacity: 0.6;
     text-decoration: none;
 }
 
@@ -363,7 +363,7 @@ a:active {
 /* My Selection Hover*/
 
 .my-selection:hover {
-    opacity: 0.8;
+    opacity: 0.6;
     text-decoration: none;
 }
 
