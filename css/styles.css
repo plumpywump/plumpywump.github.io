@@ -177,11 +177,6 @@ main {
     text-align: center;
 }
 
-.body-padding {
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
 
 /* Headings*/
 
@@ -208,9 +203,10 @@ h3 {
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 1.125em;
     font-weight: 300;
 }
+
 
 p {
     font-size: 1em;
@@ -404,6 +400,17 @@ a:active {
         padding: 16px 32px 16px 32px;
     }
 
+    .about-container {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    
+    }
+
+    .about-text {
+        max-width: 50%;
+    }
+
     .bottom-projects-container {
         max-width: 100%;
         padding: 16px 32px 16px 32px;
@@ -426,6 +433,13 @@ a:active {
     }
 
     .hero-img {
+        max-width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 16px;
+    }
+
+    .about-img {
         max-width: 240px;
         margin-left: auto;
         margin-right: auto;
@@ -461,12 +475,6 @@ a:active {
         border-bottom: unset;
     }
 
-    .body-padding {
-        margin: auto;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
     .main-images {
         max-width: 550px;
         margin-left: auto;
@@ -498,12 +506,12 @@ a:active {
     }
 
     h4 {
-        font-size: 1em;
+        font-size: 1.25em;
         font-weight: 300;
     }
 
     p {
-        font-size: 0.875em;
+        font-size: 1em;
         font-weight: 300;
     }
 
@@ -518,6 +526,17 @@ a:active {
             padding: 16px 48px 16px 48px;
         }
 
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        
+        }
+
+        .about-text {
+            max-width: 50%;
+        }
+    
         .navtoggle li:not(:last-child) {
             display: inline-block;
         }
@@ -599,12 +618,6 @@ a:active {
             border-bottom: unset;
         }
 
-        .body-padding {
-            margin: auto;
-            padding-left: 80px;
-            padding-right: 80px;
-        }
-
         h1 {
             font-size: 2em;
             font-weight: 700;
@@ -631,6 +644,13 @@ a:active {
         }
 
         .hero-img {
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 16px;
+        }
+
+        .about-img {
             max-width: 260px;
             margin-left: auto;
             margin-right: auto;
